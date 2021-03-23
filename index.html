@@ -5,7 +5,7 @@
     <head>
         <title>WEB1- CSS</title>
         <meta charset="utf-8">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTC4PKFQGB"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -13,33 +13,19 @@
         gtag('js', new Date());
         gtag('config', 'G-ZTC4PKFQGB');
         </script>
+
         <link rel="stylesheet" href="style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="colors.js"></script>
+
     </head>
 
     <body>
         <h1><a href="index.html">WEB</a></h1>
-        <!-- <input type="button" value="night" onclick="
-        document.querySelector('body').style.
-        backgroundColor='black';
-        document.querySelector('body').style.color='white';
-        ">
-        <input type="button" value="day" onclick="
-        document.querySelector('body').style.
-        backgroundColor='white';
-        document.querySelector('body').style.color='black';
-        "> -->
-        <input type="button" value="night" onclick="
-            var target = document.querySelector('body')
-            if(this.value === 'night'){
-                target.style.backgroundColor='black';
-                target.style.color='white';
-                this.value = 'day';
-            } else{
-                target.style.backgroundColor='white';
-                target.style.color='black';
-                this.value = 'night';
-            }
-        ">
+
+        <input type="button" value="night" onclick="nightdayHandler(this);">
 
         <div id="grid">
             <ol>
